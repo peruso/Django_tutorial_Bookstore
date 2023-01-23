@@ -8,7 +8,10 @@ services:
     ports:
       - 8000:8000
     depends_on:
-      - db 
+      - db
+    environment:
+      - "DJANGO_SECRET_KEY=)99w$$8s^$$2trk6b$$!mv2n^3w(sq@z2$$)c&&yi6qxejtv9t!mr6" 
+      - "DJANGO_DEBUG=True"
   db:
     image: postgres:11
     volumes:
