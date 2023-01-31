@@ -25,4 +25,5 @@ urlpatterns = [
     # Local apps
     # path("accounts/", include("accounts.urls")), allauth.urlsを加えたので消した
     path("", include("pages.urls")),
+    path("books/", include("books.urls")),
 ]
